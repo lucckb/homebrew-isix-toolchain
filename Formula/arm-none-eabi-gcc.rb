@@ -3,8 +3,8 @@ require "formula"
 class ArmNoneEabiGcc < Formula
   desc "GNU C/C++ compiler for OS-less ARM 32-bit architecture"
   homepage "https://gcc.gnu.org"
-  url 'http://ftpmirror.gnu.org/gcc/gcc-10.3.0/gcc-10.3.0.tar.xz'
-  sha256 '64f404c1a650f27fc33da242e1f2df54952e3963a49e06e73f6940f3223ac344'
+  url 'http://ftpmirror.gnu.org/gcc/gcc-11.1.0/gcc-11.1.0.tar.xz'
+  sha256 '4c4a6fb8a8396059241c2e674b85b351c26a5d678274007f076957afa1cc9ddf'
   patch :p2, :DATA
 
   depends_on "arm-none-eabi-binutils"
@@ -107,8 +107,8 @@ __END__
 --- ./gcc-9.1.0/gcc/config/arm/t-arm-elf	2019-01-01 13:31:55.000000000 +0100
 +++ ./gcc-8.2.0/gcc/config/arm/t-arm-elf	2019-06-21 10:00:31.378862283 +0200
 @@ -1,4 +1,4 @@
--# Copyright (C) 1998-2020 Free Software Foundation, Inc.
-+# Copyright (C) 1998-2020 Free Software Foundation, Inc. (BoFF Mod)
+-# Copyright (C) 1998-2021 Free Software Foundation, Inc.
++# Copyright (C) 1998-2021 Free Software Foundation, Inc. (BoFF Mod)
  #
  # This file is part of GCC.
  #
